@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+
+    <style>
+        * {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="inp1" type="number" placeholder="enter 1st numbar">
+    <input id="inp2" type="number" placeholder="enter 2nd numbar">
+    <br>
+    <button id="ad" onclick="add()"
+        style="margin-right: 30px; font-size: 30px; margin-top: 50px; padding: 5px;">Add</button>
+    <button id="sub" onclick="subtract()"
+        style="margin-right: 30px; font-size: 30px; margin-top: 50px; padding: 5px;">Subtract</button>
+    <button id="mul" onclick="multiply()"
+        style="margin-left: 30px; font-size: 30px; margin-top: 50px; padding: 5px;">Multiply</button>
+    <button id="div" onclick="devide()"
+        style="margin-left: 30px; font-size: 30px; margin-top: 50px; padding: 5px;">Devide</button>
+</body>
+
+</html>
+
+
+
+<script>
+
+    function add() {
+
+        var num1 = document.getElementById("inp1").value;
+        var num2 = document.getElementById("inp2").value;
+        if (num1 && num2)
+        {
+            result = Number(num1) + Number(num2)
+            alert(result)
+        } 
+        else 
+        {
+            alert("Please Enter Any 2 numbers, (Both Input Box)")
+        }
+    }
+
+    
+    function subtract() {
+
+        var num1 = document.getElementById("inp1").value;
+        var num2 = document.getElementById("inp2").value;
+        if (num1 && num2) 
+        {
+            result = Number(num1) - Number(num2)
+            alert(result)
+        } 
+        else 
+        {
+            alert("Please Enter Any 2 numbers, (Both Input Box)")
+        }
+    }
+
+
+    function multiply() {
+        
+        var num1 = document.getElementById("inp1").value;
+        var num2 = document.getElementById("inp2").value;
+        if (num1 && num2) 
+        {
+            result = Number(num1) * Number(num2)
+            alert(result)
+        } 
+        else 
+        {
+            alert("Please Enter Any 2 numbers, (Both Input Box)")
+        }
+    }
+
+
+    function devide() {
+
+        var num1 = document.getElementById("inp1").value;
+        var num2 = document.getElementById("inp2").value;
+        if (num1 && num2) 
+        {
+            result = Number(num1 / Number(num2))
+            alert(result)
+        } 
+        else 
+        {
+            alert("Please Enter Any 2 numbers, (Both Input Box)")
+        }
+    }
+</script>
